@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/jquery.js"></script>
+</head>
+<body>
+    <h1>Selectors</h1>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Syntax</th>
+                
+                <th>Açıklama</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>$("*")</td>
+                <td>Tüm Elementler Seçilir</td>
+            </tr>
+            <tr>
+                <td>$(this)</td>
+                <td>Mevcut Element</td>
+            </tr>
+            <tr>
+                <td>$("p.intro")</td>
+                <td>Classı intro olanlar</td>
+            </tr>
+            <tr>
+                <td>$("p:first")</td>
+                <td>İlk p elementi</td>
+            </tr>
+            <tr>
+                <td>$("ul li:first")</td>
+                <td>Ul elementlerindeki ilk Li elementini seçer</td>
+            </tr>
+            <tr>
+                <td>$("[href]")</td>
+                <td>href attribute bulunan elementleri seçer</td>
+            </tr>
+            <tr>
+                <td>$("a[target='_blank']")</td>
+                <td>A elementlerinde target attribute _blank değerine sahip olanları seçer</td>
+            </tr>
+            <tr>
+                <td>$("a[target!='_blank']")</td>
+                <td>A elementlerinde target attribute _blank değerine sahip olmayanları seçer</td>
+            </tr>
+            <tr>
+                <td>$(":button")</td>
+                <td>Tüm button elementlerini, type'ı button olan elementleri seçer</td>
+            </tr>
+            <tr>
+                <td>$("tr:even)</td>
+                <td>Tüm even tr elementlerini seçer</td>
+            </tr>
+            <tr>
+                <td>$("tr:odd)</td>
+                <td>Tüm odd tr elementlerini seçer</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/jquery.js"></script>
+</head>
+
+<body>
+    <h1>Slide</h1>
+    <button id="button1">Metni Aç</button>
+    <button id="button2">Metni Aç / Kapat</button>
+    <div id="div1" style="display: none;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto culpa, <br>consequatur, enim asperiores quod
+        nesciunt animi libero numquam maxime itaque possimus vitae, unde accusamus magni! Repellat labore unde provident
+        aspernatur.
+        <br>
+        <button id="button3">Metni Kapat</button>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("#div1").slideDown("slow");
+            });
+            $("#button2").click(function () {
+                $("#div1").slideToggle(300);
+            });
+            $("#button3").click(function () {
+                $("#div1").slideUp(300);
+            });
+        });
+    </script>
+</body>
+
+</html>

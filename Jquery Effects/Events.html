@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="/jquery.js"></script>
+</head>
+
+<body>
+   <h1>Events</h1>
+   <button id="button1">1 Kez Tıkla</button>
+   <button id="button2">2 Kez Tıkla</button>
+   <button id="button3">İmleci Getir</button>
+   <input id="input1" type="text" />
+   <br>
+   <br>
+   <form id="form1">
+      <button id="button4">Submit</button>
+   </form>
+   <br>
+   <br>
+   <button id="button5">Tıkla</button>
+   <br>
+   <br>
+   <button id="button6">Tıkla</button>
+   <script>
+      $(document).ready(function () {
+         $("#button1").click(function () {
+            alert("1 Kez Tıklandı");
+         });
+         $("#button2").dblclick(function () {
+            alert("2 Kez Tıklandı");
+         });
+         $("#button3").mouseenter(function () {
+            $(this).hide();
+         });
+         $("#button3").mouseleave(function () {
+            $(this).show();
+         });
+         //.keydown() metodu bir klavye tuşuna basıldığı zaman çalışır. .keyup() metodu ise bir klavye tuşundan parmak kaldırıldığı zaman çalışır. 
+         $("#input1").keyup(function () {
+            console.log("Inputa Yazı Yazılıyor");
+         });
+         $("#form1").submit(function () {
+            alert("Form Submit Edildi");
+         });
+         $("#button5").on("click", function () {
+            alert("Tıklandı");
+         });
+         $("#button6").on( {
+            mouseleave:function(){
+               alert("İmleç Buton Üzerinden Ayrıldı");
+            },
+            click:function(){
+               alert("Tıklandı");
+            }
+         });
+      });
+   </script>
+</body>
+
+</html>

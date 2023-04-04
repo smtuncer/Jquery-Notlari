@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="/jquery.js"></script>
+</head>
+
+<body>
+   <h1>Hide Ve Show</h1>
+   <button id="button1">Göster</button>
+   <button id="button2">Gizle</button>
+   <button id="button3">Göster / Gizle</button>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore numquam fuga architecto mollitia amet doloribus rerum atque vitae tenetur, reiciendis perferendis assumenda voluptas eum dolore omnis placeat optio dolorem.</p>
+   <script>
+      $(document).ready(function () {
+         $("#button1").click(function () {
+            $("p").show("fast");
+         });
+         $("#button2").click(function () {
+            $("p").hide(1000);
+         });
+         $("#button3").click(function () {
+            $("p").toggle("slow");
+         });
+      });
+   </script>
+</body>
+
+</html>
